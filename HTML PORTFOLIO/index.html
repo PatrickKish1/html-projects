@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beginner Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="home-and-name">
+            <a href="#about" class="home-icon"><img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg" alt="profile-pic"></a>
+            <div class="name">Patrick Amenuku</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="profile-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVCHywHxDFVk0j8PEgX8FELCQ8Vbiu2a49Xg&s" alt="Profile Picture" class="profile-image">
+        </div>
+        <h1>About Me</h1>
+        <p>I'm a passionate web developer with 3 years of experience in creating modern web applications. I love coding and learning new technologies to enhance my skills.</p>
+    </section>
+
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skill card">
+                <img src="html5.png" alt="HTML5">
+                <p>HTML5</p>
+            </div>
+            <div class="skill card">
+                <img src="css3.png" alt="CSS3">
+                <p>CSS3</p>
+            </div>
+            <div class="skill card">
+                <img src="javascript.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="project card" onclick="showProjectDetails('project1')">
+                <img src="project1.png" alt="Project 1 Image">
+                <h2>Project 1: E-commerce Website</h2>
+            </div>
+            <div class="project card" onclick="showProjectDetails('project2')">
+                <img src="project2.png" alt="Project 2 Image">
+                <h2>Project 2: Portfolio Website</h2>
+            </div>
+            <div class="project card" onclick="showProjectDetails('project3')">
+                <img src="project3.png" alt="Project 3 Image">
+                <h2>Project 3: Blogging Platform</h2>
+            </div>
+        </div>
+        <div id="project-details" class="project-details"></div>
+    </section>
+
+    <section id="recommendations">
+        <h1>Recommendations</h1>
+        <div class="recommendations-container">
+            <div class="recommendation card">
+                <div class="profile-pic">
+                    <img src="user1.png" alt="User 1 Profile Picture">
+                </div>
+                <div class="recommendation-content">
+                    <span class="username">Jane Smith</span>
+                    <p>"Patrick is a highly skilled developer with a great eye for detail. He consistently delivers high-quality work."</p>
+                </div>
+            </div>
+            <div class="recommendation card">
+                <div class="profile-pic">
+                    <img src="user2.png" alt="User 2 Profile Picture">
+                </div>
+                <div class="recommendation-content">
+                    <span class="username">Mike Johnson</span>
+                    <p>"Patrick's ability to understand and implement complex requirements is impressive. He's a great asset to any team."</p>
+                </div>
+            </div>
+            <div class="recommendation card">
+                <div class="profile-pic">
+                    <img src="user3.png" alt="User 3 Profile Picture">
+                </div>
+                <div class="recommendation-content">
+                    <span class="username">Sarah Brown</span>
+                    <p>"Patrick is a proactive and dedicated professional. His contributions have been invaluable to our projects."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="add-recommendation">
+        <h1>Add a Recommendation</h1>
+        <form id="recommendation-form">
+            <textarea id="new-recommendation" placeholder="Enter your recommendation here..."></textarea>
+            <input type="text" id="recommender-name" placeholder="Your Name">
+            <button type="button" onclick="addRecommendation()">Add Recommendation</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <p>Contact Info</p>
+            <p>Email: patrick.doe@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div id="copyright">
+            <p>&copy; 2024 Patrick Amenuku. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

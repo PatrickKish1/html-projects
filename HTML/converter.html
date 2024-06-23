@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+            text-align: center;
+            flex-grow: 1;
+        }
+        header a {
+            text-decoration: none;
+        }
+        header img {
+            width: 30px;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 5em 0 1em;
+            margin-top: auto;
+        }
+        nav a {
+            text-decoration: none;
+        }
+        nav button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.75em 1.5em;
+            margin: 0.5em;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background-color: #45a049;
+        }
+        #all-conversion-sections {
+            padding: 2em;
+            margin-top: 6em;
+        }
+        section {
+            background: white;
+            margin: 1em auto;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        figure {
+            text-align: center;
+        }
+        figure img {
+            max-width: 30%;
+            height: auto;
+        }
+        figure figcaption {
+            margin-top: 0.5em;
+            font-style: italic;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 1em;
+            margin: 1em 0;
+        }
+        legend {
+            padding: 0 0.5em;
+        }
+        label, input, button {
+            display: block;
+            width: 100%;
+            margin: 0.5em 0;
+        }
+        input[type="number"] {
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 90%;
+            height: 24px;
+            font-size: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 1em;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        aside {
+            background-color: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+            padding: 1em;
+            margin: 1em 0;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#home">
+            <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg" alt="Home icon">
+        </a>
+        <h1>Units Converter</h1>
+        <div></div>
+    </header>
+    
+    <div id="all-conversion-sections">
+        <section id="temperature">
+            <nav>
+                <a href="#temperature"><button>Temperature</button></a>
+                <a href="#weight"><button>Weight</button></a>
+                <a href="#distance"><button>Distance</button></a>
+            </nav>
+
+            <figure>
+                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" alt="Thermometer">
+                <figcaption>Celsius to Fahrenheit Conversion</figcaption>
+            </figure>
+            <article>
+                <fieldset>
+                    <legend>Temperature</legend>
+                    <label for="celsius">Celsius</label>
+                    <input type="number" id="celsius">
+                    <button onclick="convertTemperature()" style="width: 50%; margin: 0 auto;">Convert</button>
+                    <label for="fahrenheit">Fahrenheit</label>
+                    <input type="number" id="fahrenheit" readonly>
+                </fieldset>
+            </article>
+            <aside>
+                To convert Celsius to Fahrenheit yourself, use this formula replacing the `C` with your temperature in Celsius: (C × 9/5) + 32
+            </aside>
+        </section>
+
+        <section id="weight">
+            <figure>
+                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" alt="Weight scale">
+                <figcaption>Kilogram to Pound Conversion</figcaption>
+            </figure>
+            <article>
+                <fieldset>
+                    <legend>Weight</legend>
+                    <label for="kilograms">Kilograms</label>
+                    <input type="number" id="kilograms">
+                    <button onclick="convertWeight()" style="width: 50%; margin: 0 auto;">Convert</button>
+                    <label for="pounds">Pounds</label>
+                    <input type="number" id="pounds" readonly>
+                </fieldset>
+            </article>
+            <aside>
+                To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
+            </aside>
+        </section>
+
+        <section id="distance">
+            <figure>
+                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" alt="Speedometer">
+                <figcaption>Kilometer to Mile Conversion</figcaption>
+            </figure>
+            <article>
+                <fieldset>
+                    <legend>Distance</legend>
+                    <label for="kilometers">Kilometers</label>
+                    <input type="number" id="kilometers">
+                    <button onclick="convertDistance()" style="width: 50%; margin: 0 auto;">Convert</button>
+                    <label for="miles">Miles</label>
+                    <input type="number" id="miles" readonly>
+                </fieldset>
+            </article>
+            <aside>
+                To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilometers: km ÷ 1.609
+            </aside>
+        </section>
+    </div>
+    
+    <footer>
+        Learn more about HTML as a part of the IBM Fullstack Cloud Developer Certification
+    </footer>
+
+    <script>
+        function convertTemperature() {
+            const celsius = document.getElementById('celsius').value;
+            const fahrenheit = (celsius * 9/5) + 32;
+            document.getElementById('fahrenheit').value = fahrenheit.toFixed(2);
+        }
+
+        function convertWeight() {
+            const kilograms = document.getElementById('kilograms').value;
+            const pounds = kilograms * 2.205;
+            document.getElementById('pounds').value = pounds.toFixed(2);
+        }
+
+        function convertDistance() {
+            const kilometers = document.getElementById('kilometers').value;
+            const miles = kilometers / 1.609;
+            document.getElementById('miles').value = miles.toFixed(2);
+        }
+    </script>
+</body>
+</html>
