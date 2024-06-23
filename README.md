@@ -18,6 +18,21 @@ This project is a basic units converter that allows users to convert between dif
 - **Result:**
 <img src="https://github.com/PatrickKish1/html-projects/blob/main/HTML/converter.png" width="400">
 
+### 3. Solar System Projects
+These projects display an image of the solar system along with some information. The second version includes more styling for the table below and some changes to the font styles.
+
+- **Code:** [Solar System Project](https://github.com/PatrickKish1/html-projects/tree/main/HTML-CSS)
+- **Results:**
+  <img src="https://github.com/PatrickKish1/html-projects/tree/main/HTML-CSS/solar-system.png" width="300">
+  <img src="https://github.com/PatrickKish1/html-projects/tree/main/HTML-CSS/solar-css.png" width="300">
+
+### 4. Simple Portfolio
+This project is a simple portfolio using HTML, CSS, and JavaScript files separately.
+
+- **Code:** [Portfolio Project](https://github.com/PatrickKish1/html-projects/tree/main/HTML%20PORTFOLIO)
+- **Result:**
+<img src="https://github.com/PatrickKish1/html-projects/tree/main/HTML%20PORTFOLIO/profile.png" width="400">
+
 ## About This Repository
 This repository serves as a chronicle of my learning path in web development. Each project here is a step forward in understanding the core technologies of web development. As I continue to learn and grow, more projects will be added, demonstrating new skills and concepts.
 
