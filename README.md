@@ -9,14 +9,14 @@ This project is a simple single page created using HTML. It uses the `<style>` t
 
 - **Code:** [my-first-page.html](https://github.com/PatrickKish1/html-projects/blob/main/HTML/my-first-page.html)
 - **Result:**
-![First Page Result](https://github.com/PatrickKish1/html-projects/blob/main/HTML/my-first-page.png)
+<img src="https://github.com/PatrickKish1/html-projects/blob/main/HTML/my-first-page.png" width="400">
 
 ### 2. Units Converter
 This project is a basic units converter that allows users to convert between different units of temperature, weight, and distance. It is built using HTML for structure, the `<style>` tag for styling, and the `<script>` tag for JavaScript functionality.
 
 - **Code:** [converter.html](https://github.com/PatrickKish1/html-projects/blob/main/HTML/converter.html)
 - **Result:**
-![Converter Result](https://github.com/PatrickKish1/html-projects/blob/main/HTML/converter.png)
+<img src="https://github.com/PatrickKish1/html-projects/blob/main/HTML/converter.png" width="400">
 
 ## About This Repository
 This repository serves as a chronicle of my learning path in web development. Each project here is a step forward in understanding the core technologies of web development. As I continue to learn and grow, more projects will be added, demonstrating new skills and concepts.
