@@ -23,8 +23,8 @@ These projects display an image of the solar system along with some information.
 
 - **Code:** [Solar System Project](https://github.com/PatrickKish1/html-projects/tree/main/HTML-CSS)
 - **Results:**
-  <img src="https://github.com/PatrickKish1/html-projects/tree/main/HTML-CSS/solar-system.png" width="300">
-  <img src="https://github.com/PatrickKish1/html-projects/tree/main/HTML-CSS/solar-css.png" width="300">
+  <img src="https://github.com/PatrickKish1/html-projects/blob/main/HTML-CSS/solar-system.png" width="300">
+  <img src="https://github.com/PatrickKish1/html-projects/blob/main/HTML-CSS/solar-css.png" width="300">
 
 ### 4. Simple Portfolio
 This project is a simple portfolio using HTML, CSS, and JavaScript files separately.
