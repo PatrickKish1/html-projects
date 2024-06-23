@@ -31,7 +31,7 @@ This project is a simple portfolio using HTML, CSS, and JavaScript files separat
 
 - **Code:** [Portfolio Project](https://github.com/PatrickKish1/html-projects/tree/main/HTML%20PORTFOLIO)
 - **Result:**
-<img src="https://github.com/PatrickKish1/html-projects/tree/main/HTML%20PORTFOLIO/profile.png" width="400">
+<img src="https://github.com/PatrickKish1/html-projects/blob/main/HTML%20PORTFOLIO/profile.png" width="400">
 
 ## About This Repository
 This repository serves as a chronicle of my learning path in web development. Each project here is a step forward in understanding the core technologies of web development. As I continue to learn and grow, more projects will be added, demonstrating new skills and concepts.
